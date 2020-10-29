@@ -16,4 +16,6 @@ public class ApplicationConstants {
 			+ File.separator + "chromedriver.exe";
 	
 	public static String blazeDemoUrl = "https://blazedemo.com/index.php";
+	
+	public static int dynamicWaitTime = 60;
 }

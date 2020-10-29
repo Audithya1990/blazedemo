@@ -10,7 +10,7 @@
 
 	<test name="BookAFlight">
 		<classes>
-			<class name="blazedemo.testScripts.bookAFlight.java" />
+			<class name="blazedemo.testScripts.bookAFlight" />
 		</classes>
 	</test>
 
