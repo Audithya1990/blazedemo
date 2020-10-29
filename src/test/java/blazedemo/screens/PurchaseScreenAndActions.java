@@ -1,12 +1,10 @@
 package blazedemo.screens;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
-import com.automation.framework.core.DriverHelper;
 import com.automation.framework.utils.ActionsHelper;
 import com.automation.framework.utils.TestDataHelper;
 
@@ -52,7 +50,12 @@ public class PurchaseScreenAndActions extends ActionsHelper{
 	static
 	WebElement button_PurchaseFlight;
 	
-	public static void fillCustomerDetails() {
+	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Thank you for your purchase today!')]")
+	static
+	WebElement ConfirmationHeader;
+	
+	
+	public void fillCustomerDetails() {
 		 setText(textBox_Name, TestDataHelper.testData("Name"));
 		 setText(textbox_Address, TestDataHelper.testData("Address"));
 		 setText(textbox_City, TestDataHelper.testData("City"));
@@ -63,7 +66,6 @@ public class PurchaseScreenAndActions extends ActionsHelper{
 		 setText(textbox_Year, TestDataHelper.testData("Year"));
 		 setText(textbox_NameOnCard, TestDataHelper.testData("NameOnCard"));
 		 click(button_PurchaseFlight);
-		 WebElement ConfirmationHeader = DriverHelper.getWebDriver().findElement(By.xpath("//h1[contains(text(),'Thank you for your purchase today!')]"));
 		 waitForElementToBeVisible(ConfirmationHeader);
 		 Assert.assertTrue(ConfirmationHeader.isDisplayed(),"Confirmation Page displayed");
 	}

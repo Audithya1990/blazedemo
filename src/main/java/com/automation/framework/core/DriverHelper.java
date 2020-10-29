@@ -24,7 +24,7 @@ public class DriverHelper {
 		Long threadId;
 		try {
 			threadId = Thread.currentThread().getId();
-			if (!threadDriver.containsKey(threadId)) {
+			if (threadDriver.containsKey(threadId)) {
 				return threadDriver.get(threadId);
 			}
 		} catch (Exception exception) {

@@ -15,7 +15,7 @@ public class ConfirmationScreenAndActions {
 	static
 	WebElement textarea_json;
 	
-	public static void verifyConfirmationPage() {
+	public void verifyConfirmationPage() {
 		Assert.assertTrue(header_ThaksConfirmation.isDisplayed(),"Confirmation Screen Displayed");
 		Assert.assertTrue(textarea_json.isDisplayed(),"Json Text area is  Displayed");
 	}

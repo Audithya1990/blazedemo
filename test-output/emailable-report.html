@@ -1,56 +1,70 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<title>TestNG Report</title>
-<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
-</head>
-<body>
-<table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">InterviewTestSuite</th></tr>
-<tr><td><a href="#t0">BookAFlight</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">170</td><td></td><td></td></tr>
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">InterviewTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BookAFlight &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">blazedemo.testScripts.BookAFlight</td><td><a href="#m0">onInitilise</a></td><td rowspan="1">1603968832500</td><td rowspan="1">99</td></tr><tr><th colspan="4">BookAFlight &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">blazedemo.testScripts.BookAFlight</td><td><a href="#m1">onCompleted</a></td><td rowspan="1">1603968832622</td><td rowspan="1">-1603968832622</td></tr><tr><th colspan="4">BookAFlight &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">blazedemo.testScripts.BookAFlight</td><td><a href="#m2">bookAFlight</a></td><td rowspan="1">1603968832613</td><td rowspan="1">0</td></tr></tbody>
-</table>
-<h2>BookAFlight</h2><h3 id="m0">blazedemo.testScripts.BookAFlight#onInitilise</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@548a24a</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IncompatibleClassChangeError: Found interface org.apache.poi.util.POILogger, but class was expected
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:304)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:156)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:124)
-	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:559)
-	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:112)
-	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:83)
-	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:128)
-	at org.apache.poi.openxml4j.opc.ZipPackagePart.&lt;init&gt;(ZipPackagePart.java:78)
-	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:218)
-	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:662)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:269)
-	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:39)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:204)
-	at com.automation.framework.utils.ExcelHelper.&lt;init&gt;(ExcelHelper.java:31)
-	at com.automation.framework.utils.TestDataHelper.getTestData(TestDataHelper.java:17)
-	at com.automation.framework.core.FrameworkScript.onInitilise(FrameworkScript.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">blazedemo.testScripts.BookAFlight#onCompleted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">blazedemo.testScripts.BookAFlight#bookAFlight</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IncompatibleClassChangeError: Found interface org.apache.poi.util.POILogger, but class was expected
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:304)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:156)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:124)
-	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:559)
-	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:112)
-	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:83)
-	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:128)
-	at org.apache.poi.openxml4j.opc.ZipPackagePart.&lt;init&gt;(ZipPackagePart.java:78)
-	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:218)
-	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:662)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:269)
-	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:39)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:204)
-	at com.automation.framework.utils.ExcelHelper.&lt;init&gt;(ExcelHelper.java:31)
-	at com.automation.framework.utils.TestDataHelper.getTestData(TestDataHelper.java:17)
-	at com.automation.framework.core.FrameworkScript.onInitilise(FrameworkScript.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">InterviewTestSuite</th></tr><tr><td><a href="#t0">BookAFlight</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">351</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">InterviewTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BookAFlight &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">blazedemo.testScripts.BookAFlight</td><td><a href="#m0">onInitilise</a></td><td rowspan="1">1603987334084</td><td rowspan="1">296</td></tr><tr><th colspan="4">BookAFlight &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">blazedemo.testScripts.BookAFlight</td><td><a href="#m1">bookAFlight</a></td><td rowspan="1">1603987334391</td><td rowspan="1">0</td></tr></tbody></table><h2>BookAFlight</h2><h3 id="m0">blazedemo.testScripts.BookAFlight#onInitilise</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@160ac7fb</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at java.base/jdk.internal.logger.LoggerFinderLoader.&lt;clinit&gt;(LoggerFinderLoader.java:46)
+	at java.base/java.lang.System$LoggerFinder.lambda$accessProvider$0(System.java:1642)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:449)
+	at java.base/java.lang.System$LoggerFinder.accessProvider(System.java:1643)
+	at java.base/java.lang.System$LoggerFinder.getLoggerFinder(System.java:1631)
+	at java.base/jdk.internal.logger.LazyLoggers.accessLoggerFinder(LazyLoggers.java:339)
+	at java.base/jdk.internal.logger.LazyLoggers.getLoggerFromFinder(LazyLoggers.java:389)
+	at java.base/jdk.internal.logger.LazyLoggers$1.apply(LazyLoggers.java:353)
+	at java.base/jdk.internal.logger.LazyLoggers$1.apply(LazyLoggers.java:350)
+	at java.base/jdk.internal.logger.LazyLoggers$LazyLoggerAccessor.createLogger(LazyLoggers.java:278)
+	at java.base/jdk.internal.logger.BootstrapLogger.getLogger(BootstrapLogger.java:956)
+	at java.base/jdk.internal.logger.LazyLoggers$LazyLoggerAccessor.platform(LazyLoggers.java:197)
+	at java.base/jdk.internal.logger.LazyLoggers$LazyLoggerAccessor.release(LazyLoggers.java:232)
+	at java.base/jdk.internal.logger.BootstrapLogger$RedirectedLoggers.replaceSurrogateLoggers(BootstrapLogger.java:1015)
+	at java.base/jdk.internal.logger.BootstrapLogger.redirectTemporaryLoggers(BootstrapLogger.java:1060)
+	at java.logging/java.util.logging.LogManager.readPrimordialConfiguration(LogManager.java:448)
+	at java.logging/java.util.logging.LogManager$2.run(LogManager.java:394)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at java.logging/java.util.logging.LogManager.ensureLogManagerInitialized(LogManager.java:382)
+	at java.logging/java.util.logging.LogManager.getLogManager(LogManager.java:430)
+	at java.logging/java.util.logging.Logger.demandLogger(Logger.java:648)
+	at java.logging/java.util.logging.Logger.getLogger(Logger.java:717)
+	at java.logging/java.util.logging.Logger.getLogger(Logger.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;clinit&gt;(RemoteWebDriver.java:94)
+	at com.automation.framework.core.FrameworkScript.onInitilise(FrameworkScript.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;input&quot; is null
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:98)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+	at java.base/java.io.FilePermission.&lt;clinit&gt;(FilePermission.java:208)
+	... 53 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">blazedemo.testScripts.BookAFlight#bookAFlight</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at java.base/jdk.internal.logger.LoggerFinderLoader.&lt;clinit&gt;(LoggerFinderLoader.java:46)
+	at java.base/java.lang.System$LoggerFinder.lambda$accessProvider$0(System.java:1642)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:449)
+	at java.base/java.lang.System$LoggerFinder.accessProvider(System.java:1643)
+	at java.base/java.lang.System$LoggerFinder.getLoggerFinder(System.java:1631)
+	at java.base/jdk.internal.logger.LazyLoggers.accessLoggerFinder(LazyLoggers.java:339)
+	at java.base/jdk.internal.logger.LazyLoggers.getLoggerFromFinder(LazyLoggers.java:389)
+	at java.base/jdk.internal.logger.LazyLoggers$1.apply(LazyLoggers.java:353)
+	at java.base/jdk.internal.logger.LazyLoggers$1.apply(LazyLoggers.java:350)
+	at java.base/jdk.internal.logger.LazyLoggers$LazyLoggerAccessor.createLogger(LazyLoggers.java:278)
+	at java.base/jdk.internal.logger.BootstrapLogger.getLogger(BootstrapLogger.java:956)
+	at java.base/jdk.internal.logger.LazyLoggers$LazyLoggerAccessor.platform(LazyLoggers.java:197)
+	at java.base/jdk.internal.logger.LazyLoggers$LazyLoggerAccessor.release(LazyLoggers.java:232)
+	at java.base/jdk.internal.logger.BootstrapLogger$RedirectedLoggers.replaceSurrogateLoggers(BootstrapLogger.java:1015)
+	at java.base/jdk.internal.logger.BootstrapLogger.redirectTemporaryLoggers(BootstrapLogger.java:1060)
+	at java.logging/java.util.logging.LogManager.readPrimordialConfiguration(LogManager.java:448)
+	at java.logging/java.util.logging.LogManager$2.run(LogManager.java:394)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at java.logging/java.util.logging.LogManager.ensureLogManagerInitialized(LogManager.java:382)
+	at java.logging/java.util.logging.LogManager.getLogManager(LogManager.java:430)
+	at java.logging/java.util.logging.Logger.demandLogger(Logger.java:648)
+	at java.logging/java.util.logging.Logger.getLogger(Logger.java:717)
+	at java.logging/java.util.logging.Logger.getLogger(Logger.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;clinit&gt;(RemoteWebDriver.java:94)
+	at com.automation.framework.core.FrameworkScript.onInitilise(FrameworkScript.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;input&quot; is null
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:98)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+	at java.base/java.io.FilePermission.&lt;clinit&gt;(FilePermission.java:208)
+	... 53 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
