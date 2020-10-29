@@ -1,5 +1,7 @@
 package com.automation.framework.core;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestContext;
@@ -15,7 +17,7 @@ public class FrameworkScript extends TestDataHelper {
 	public static WebDriver driver;
 
 	@BeforeMethod
-	public void onInitilise(ITestContext context) {
+	public static void onInitilise(ITestContext context) {
 		try {
 			browser = context.getCurrentXmlTest().getParameter("browser").toUpperCase();
 			getTestData(context);

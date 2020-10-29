@@ -1,5 +1,6 @@
 package com.automation.framework.utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,16 +16,19 @@ import com.automation.framework.core.FrameworkException;
 
 public class ExcelHelper {
 
-	public static Sheet sheet = null;
-	public static Workbook workbook = null;
+	private static String excelPath = null;
+	private static Sheet sheet = null;
+	private Workbook workbook = null;
 
 	public ExcelHelper(String fileName, String sheetName) {
+		excelPath = fileName.toString();
 		try {
 			if (fileName.endsWith(".xls")) {
 				workbook = new HSSFWorkbook(new FileInputStream(fileName));
 				sheet = workbook.getSheet(sheetName);
 			} else if (fileName.endsWith(".xlsx")) {
-				workbook = new XSSFWorkbook(new FileInputStream(fileName));
+				FileInputStream file = new FileInputStream(new File(fileName));
+				workbook = new XSSFWorkbook(file);
 				sheet = workbook.getSheet(sheetName);
 			}
 
