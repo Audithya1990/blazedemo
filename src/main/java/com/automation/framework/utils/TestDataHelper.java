@@ -9,9 +9,12 @@ public class TestDataHelper {
 	
 	public static HashMap<String, String> dataMap = null;
 
-	ExcelHelper excelReader = null;
+	
 	public void getTestData(ITestContext context) {
+		ExcelHelper excelReader = null;
 		String className = context.getName();
+		System.out.println(ApplicationConstants.testDataPath);
+		System.out.println(ApplicationConstants.testDataSheetName);
 		excelReader = new ExcelHelper(ApplicationConstants.testDataPath, ApplicationConstants.testDataSheetName);
 		dataMap = excelReader.getData(className);
 	}
