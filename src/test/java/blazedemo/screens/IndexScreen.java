@@ -1,5 +1,5 @@
 package blazedemo.screens;
 
-public class HomeScreen {
+public class IndexScreen {
 
 }
