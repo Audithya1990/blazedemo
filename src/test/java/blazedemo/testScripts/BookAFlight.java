@@ -20,7 +20,11 @@ public class BookAFlight extends FrameworkScript {
 		IndexPage.selectSourceAndDestinationCities();
 		ReserveScreenAndActions reservePage = PageFactory.initElements(DriverHelper.getWebDriver(),
 				ReserveScreenAndActions.class);
-		reservePage.selectFlightFromReserveFlightsList();
+	reservePage.selectFlightFromReserveFlightsList();
+	}		
+		
+	@Test	
+	public static void purchaseAndConfirmation() {
 		PurchaseScreenAndActions purchasePage = PageFactory.initElements(DriverHelper.getWebDriver(),
 				PurchaseScreenAndActions.class);
 		purchasePage.fillCustomerDetails();
